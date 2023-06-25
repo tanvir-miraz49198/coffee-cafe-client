@@ -5,7 +5,7 @@ const AddCoffee = () => {
     const handleSubmit = event => {
         event.preventDefault();
         const form = event.target;
-        const coffee = form.name.value;
+        const name = form.name.value;
         const quantity = form.quantity.value;
         const supplier = form.supplier.value;
         const taste = form.taste.value;
@@ -13,7 +13,7 @@ const AddCoffee = () => {
         const details = form.details.value;
         const photoUrl = form.photoUrl.value;
 
-        const newCoffee = {coffee, quantity, supplier, taste, category, details, photoUrl}
+        const newCoffee = {name, quantity, supplier, taste, category, details, photoUrl}
         console.log(newCoffee)
 
         // send to the server
