@@ -30,7 +30,7 @@ const AddCoffee = () => {
                 if (data.insertedId) {
                     Swal.fire({
                         title: 'Success!',
-                        text: 'User added successfully',
+                        text: 'Coffee added successfully',
                         icon: 'success',
                         confirmButtonText: 'Cool'
                       })
@@ -43,12 +43,13 @@ const AddCoffee = () => {
 
     return (
         <div className="bg-slate-200">
-            <h2>Add a Coffee</h2>
+            
 
 
             {/* form section */}
 
             <div className="bg-stone-400 m-8 rounded-md py-4">
+            <h2 className="ml-8 text-4xl font-extrabold text-gray-800 mb-5">Add a Coffee</h2>
                 <form className="max-w-xl mx-auto p-4 " onSubmit={handleSubmit}>
 
                     <div className="md:flex space-x-2 ">
