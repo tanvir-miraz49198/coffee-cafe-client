@@ -1,3 +1,5 @@
+import { FaArrowAltCircleLeft } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2'
 const AddCoffee = () => {
 
@@ -49,7 +51,16 @@ const AddCoffee = () => {
             {/* form section */}
 
             <div className="bg-stone-400 m-8 rounded-md py-4">
-            <h2 className="ml-8 text-4xl font-extrabold text-gray-800 mb-5">Add a Coffee</h2>
+
+            <div>
+                    <Link to="/">
+                        <button>
+                            <FaArrowAltCircleLeft className="text-4xl ml-2 text-gray-800" />
+                        </button>
+                    </Link>
+                </div>
+
+            <h2 className="text-center ml-8 text-4xl font-extrabold text-gray-800 mb-5">Add Some Coffee</h2>
                 <form className="max-w-xl mx-auto p-4 " onSubmit={handleSubmit}>
 
                     <div className="md:flex space-x-2 ">
