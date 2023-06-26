@@ -52,7 +52,7 @@ const UpdateCoffee = () => {
 
 
     return (
-        <div className="bg-slate-200 p-20">
+        <div className="bg-slate-200 p-10 ">
 
             {/* form section */}
 
